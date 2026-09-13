@@ -1,12 +1,12 @@
-# realtime_autotuner
-A realtime_autotuner using a INMP441 mic board, esp32s3, and MAX98357 I2S amp, to a 3W speaker
+# Realtime_Autotuner
+A Realtime_Autotuner using a INMP441 mic board, esp32s3, and MAX98357 I2S amp, to a 3W speaker
   
 The ESP32S3 is dual core, both cores are used in parallel by using free RTOS.  
 
 **The main project is the autotuner folder**
 
 
-## file structure
+## File Structure
 
 **audiooutput** - all paino wav files created from aiff files from the University of Iowa Electronic Music Studios: https://theremin.music.uiowa.edu/mispiano.html
 
@@ -23,21 +23,22 @@ The ESP32S3 is dual core, both cores are used in parallel by using free RTOS.
 
 ## System Overview
 High Level Overview
-![High Level Overview](diagrams\high_level_overview.png)
+
+<img width="742" height="263" alt="Screenshot 2026-09-13 012047" src="https://github.com/user-attachments/assets/ca3701ae-97d2-46e0-b90a-89db32c45833" />
 
 Mid Level Overview
 
-![Mid Level Overview](diagrams\mid_level_overview.png)  
+<img width="650" height="517" alt="Screenshot 2026-09-13 012320" src="https://github.com/user-attachments/assets/8996b349-d73c-45bb-a5db-f62affac6cf3" /> 
 
 Mic input to Output
-![Mic input to Output](diagrams\mic_input_to_output.png)
-  
+
+<img width="833" height="299" alt="Screenshot 2026-09-13 012416" src="https://github.com/user-attachments/assets/d2393773-ede3-4651-9f71-b6b8ca2c9901" />
+
 Overview of Buffer system used for processing
-![Overview of Buffer system used for processing](diagrams\buffer_system_overview.png)
 
+<img width="663" height="576" alt="Screenshot 2026-09-13 012523" src="https://github.com/user-attachments/assets/70485bca-d6ce-444b-960a-c15aff3e74ea" />
 
-
-## steps/goals
+## Steps/Goals
 #### Part I:
 Write a DSP algorithm to perform an FFT with interpolation or auto coloration to correct the notes in an audio input to a scale, interval shift, or harmonization depending on the mode in Python.
 
