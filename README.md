@@ -8,7 +8,7 @@ The ESP32S3 is dual core, both cores are used in parallel by using free RTOS.
 
 ## File Structure
 
-**audiooutput** - all paino wav files created from aiff files from the University of Iowa Electronic Music Studios: https://theremin.music.uiowa.edu/mispiano.html
+**audiooutput** - all piano wav files created from aiff files from the University of Iowa Electronic Music Studios: https://theremin.music.uiowa.edu/mispiano.html
 
 **autotuner** - has the main working version of the real time autotuner
 
